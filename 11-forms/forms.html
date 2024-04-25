@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        input {
+            margin: 5px;
+        }
+
+        .formgroup {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .formgroup h1 {
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+
+    <div class="formgroup">
+        <h1>Creating Form Fields</h1>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Profile Details</legend>
+    
+                <label for="dropdown">Pick Your Day</label>
+                <select name="dropdown" id="">
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="3">Thursday</option>
+                </select> <br>
+    
+                <label for="name">Name: </label>
+                <input type="text" size="40" name="name" disabled height="50px" required wildcard="enter here"> <br>
+                <label for="check1">single</label>
+                <input type="checkbox" name="check1" id="">
+                <label for="check1">married</label>
+                <input type="checkbox" name="check1" id="">
+                <label for="check1">divorced</label>
+                <input type="checkbox" name="check1" id=""> <br>
+    
+                <label for="color">color</label>
+                <input type="color" name="color" id=""> <br>
+    
+                <label for="date">date: </label>
+                <input type="date" name="date" id=""> <br>
+    
+                <label for="date">datetime: </label>
+                <input type="DateTime-local" name="date" id=""> <br>
+    
+                <label for="file">file upload: </label>
+                <input type="file" name="file" id=""> <br>
+    
+                <label for="tel">telephone number: </label>
+                <input type="tel" name="tel" id="" focus> <br>
+    
+                <label for="email">email: </label>
+                <input type="email" name="email" id=""> <br>
+    
+                <label for="month">month: </label>
+                <input type="month" name="month" id=""> <br>
+    
+                
+                <label for="password">password: </label>
+                <input type="password" name="password" id=""> <br>
+    
+                <label for="radio">radio: </label>
+                <input type="radio" name="radio" id=""> <br>
+    
+                <label for="range">Range: </label>
+                <input type="range" name="tel" id=""> <br>
+    
+                <label for="search">search: </label>
+                <input type="search" name="search" id=""> <br>
+    
+                <label for="url">url: </label>
+                <input type="url" name="url" id=""> <br>
+    
+                <label for="textarea">textarea </label>
+                <textarea name="textarea" id="" cols="30" rows="5"></textarea> <br>
+    
+                <input type="submit" value="Submit you details">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>

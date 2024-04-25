@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Queries</title>
+    <style>
+
+        body {
+            background-color: grey;
+        }
+
+        @media screen and (max-width: 20em){
+            body{
+                background-color: green;
+            }
+        }
+
+        @media screen and (min-width: 20em) and (max-width: 40em){
+            body{
+                background-color: pink;
+            }
+        }
+
+        @media screen and (min-width: 40em) and (max-width: 60em){
+            body{
+                background-color: purple;
+            }
+
+
+            .box1{
+                width: 50%;
+                float: left;
+            }
+
+            .box2{
+                width: 50%;
+                float: left;
+            }
+
+            .box3{
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width: 60em){
+            body{
+                background-color: yellow;
+            }
+
+            .container{
+                display: flex;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Media Queries</h1>
+
+    <div class="container">
+        <div class="box1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eum cum fuga quaerat quasi modi amet unde repudiandae earum, inventore fugit optio eaque ratione magni odit dignissimos expedita sequi! Iure!</p>
+        </div>
+        <div class="box2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eum cum fuga quaerat quasi modi amet unde repudiandae earum, inventore fugit optio eaque ratione magni odit dignissimos expedita sequi! Iure!</p>
+        </div>
+        <div class="box3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eum cum fuga quaerat quasi modi amet unde repudiandae earum, inventore fugit optio eaque ratione magni odit dignissimos expedita sequi! Iure!</p>
+        </div>
+    </div>
+</body>
+</html>

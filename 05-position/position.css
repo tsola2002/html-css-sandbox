@@ -1,0 +1,32 @@
+.container{
+    width: 1200px;
+}
+
+.box1{
+    background-color: aqua;
+    width: 600px;
+    float: left;
+}
+
+.box2{
+    background-color:blueviolet;
+    width: 600px;
+    float: left;
+}
+
+.box3{
+    background-color:chartreuse ;
+    /* float: right; */
+    clear: left;
+}
+
+.box4{
+    width: 300px;
+    background-color:brown;
+    overflow-x: hidden;
+}
+
+.portrait{
+    width: 600px;
+    
+}

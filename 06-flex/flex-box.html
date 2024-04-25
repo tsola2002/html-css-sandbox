@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            /* width: 200px; */
+            /* height: 100px; */
+            flex-flow: column wrap;
+            justify-content: space-between;
+            /* align-items: center; */
+            justify-items: center;
+            
+        }
+
+        h1{
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        .box{
+            background-color: chocolate;
+            /* flex-basis: 100px; */
+            width: 100px;
+            /* margin-right: 5px; */
+            /* margin: 0 auto; */
+            
+        }
+
+        .first{
+            /* flex-grow: 3; */
+            order: 1;
+        }
+
+        .second{
+            /* flex-shrink: 3; */
+            order: -1;
+        }
+
+        .third{
+            order: 2;
+        }
+
+        .fourth {
+            order: -2
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Flex Box</h1>
+
+    <div class="container">
+        <div class="box first">aaaa</div>
+        <div class="box">bbbb</div>
+        <div class="box third">cccc</div>
+        <div class="box">dddd</div>
+        <div class="box">eeee</div>
+        <div class="box second">ffff</div>
+        <div class="box fourth">gggg</div>
+        <div class="box">hhhh</div>
+        <div class="box">iiii</div>
+        <div class="box">jjjj</div>
+        <div class="box">kkkk</div>
+        <div class="box">llll</div>
+        <div class="box">mmmm</div>
+        <div class="box">nnnn</div>
+        <div class="box">oooo</div>
+        <div class="box">pppp</div>
+    </div>
+</body>
+</html>

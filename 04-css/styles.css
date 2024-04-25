@@ -1,0 +1,49 @@
+
+
+body {
+  /* background-image: url("./sholly-image.jpeg");
+  background-repeat: no-repeat;
+  background-position: bottom; */
+
+  /* background: url("./sholly-image.jpeg") repeat-y right; */
+
+  
+}
+
+.one {
+  /* TYPOGRAPHIC STYLES */
+
+  color: black;
+  /* font-family: "Comic Sans MS"; */
+  /* background-color: cyan; */
+  /* color: rgb(119, 168, 50); */
+  /* color: hsl(85, 54%, 43%); */
+  /* line-height: 10px; */ 
+  /* font-size: 16px; */
+  /* font-family: "Comic-Sans MS"; */
+  /* font-weight:lighter; */
+  /* font-style: italic; */
+
+  /* font: italic bold 48px/30px "Comic Sans MS", serif; */
+
+  text-align:left;
+
+  background-color: pink;
+  text-transform:initial;
+}
+
+.two{
+  text-align: center;
+  background-color: greenyellow;
+  text-transform:none;
+
+}
+
+.three{
+  text-decoration:dashed;
+}
+
+.link{
+  text-decoration:underline;
+}
+

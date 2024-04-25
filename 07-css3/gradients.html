@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+</head>
+<style>
+    .linear{
+        width: 600px;
+        height: 600px;
+        display: block;
+        background: repeating-linear-gradient(red 100px, blue 200px, yellow 300px, green 400px); 
+        
+        /* opacity: 0.80; */
+    }
+
+    .hsl{
+        width: 600px;
+        height: 600px;
+        display: block;
+        background: linear-gradient(
+            hsl(0, 100%, 50%),
+            hsl(50, 100%, 50%),
+            hsl(300, 100%, 50%)
+            ); 
+        
+        /* opacity: 0.80; */
+    }
+
+    .radial{
+        width: 600px;
+        height: 600px;
+        display: block;
+        background: repeating-radial-gradient(red 100px, blue 200px); 
+        
+        /* opacity: 0.80; */
+    }
+</style>
+<body>
+    <h1>Gradients</h1>
+
+    <div class="linear">
+        linear gradient
+    </div>
+
+    <div class="radial">
+        radial gradient
+    </div>
+
+    <div class="hsl">
+        hsl
+    </div>
+
+
+</body>
+</html>

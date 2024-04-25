@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        ul{ display: flex;}
+        li { margin-left: 15px; list-style-type: none;  }
+        li a{ color: black; text-decoration: none; transition: all 2s ease-in-out; }
+        li a:hover{ color: red; border-bottom: 4px solid red;  }
+
+        .box1{
+            background-color: red;
+            width: 600px;
+        }
+
+        .box1:hover {
+            background-color: blue;
+            transform: scale(2) skew(-45deg);
+            transition: all 2s ease-out;
+        }      
+    </style>
+</head>
+<body>
+    <h1>Transition Effects</h1>
+
+    <ul>
+        <li><a href="">link one</a></li>
+        <li><a href="">link two</a></li>
+        <li><a href="">link three</a></li>
+        <li><a href="">link four</a></li>
+    </ul>
+
+    <ol>
+        <li>first link</li>
+        <li>first link</li>
+        <li>first link</li>
+        <li>first link</li>
+    </ol>
+
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci, suscipit eligendi vitae deserunt dolorem repellendus, non ipsum nulla obcaecati illum, eum quibusdam sequi unde tempora libero porro nostrum aliquid.
+    </div>
+
+</body>
+</html>

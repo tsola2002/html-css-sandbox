@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLES</title>
+    <style>
+        body{
+            padding: 10px;
+            width: 400px;
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+        }
+        table {
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse:collapse;
+            width: 100%;
+        }
+
+        td, th{
+            border: 2px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tbody{
+            /* background-color: lightslategray; */
+        }
+
+        tr:nth-child(odd){
+            /* background-color: greenyellow; */
+        }
+        tr:nth-child(even){
+            /* background-color: yellow; */
+        }
+
+        colgroup{
+            background-color: green;
+        }
+
+        .total{
+            background-color: red;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>HTML TABLES</h1>
+
+    <table>
+        <colgroup>
+            <col span="">
+            <col class="total">
+            <col class="yellow">
+        </colgroup>
+        <caption>User Information Table</caption>
+        <tr> <!-- beginning of a table row -->
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Sex</th>
+                <th>Phone</th>
+        
+        </tr>
+      
+            <tr>
+                <td>Omatsola</td>
+                <td>28</td>
+                <td>Ikota</td>
+                <td>Male</td>
+                <td>090912966765</td>
+            </tr>
+            <tr>
+                <td>Bunmi</td>
+                <td>30</td>
+                <td>Lekki Phase 1</td>
+                <td>Female</td>
+                <td>090955566765</td>
+            </tr>
+            <tr>
+                <td>Dele</td>
+                <td>35</td>
+                <td>Ajah</td>
+                <td>Male</td>
+                <td>09094546765</td>
+            </tr>
+            
+                <tr>
+                    <td>Mariam</td>
+                    <td>35</td>
+                    <td>VGC</td>
+                    <td>Female</td>
+                    <td>090934566765</td>
+                </tr>       
+      
+        
+    </table>
+</body>
+</html>

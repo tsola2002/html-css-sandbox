@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .grid-a{ grid-area: a; background-color: pink; }
+        .grid-b{ grid-area: y; background-color: green;}
+        .grid-c{ grid-area: z; background-color: blue;}
+        .grid-d{ grid-area: w; background-color: orangered;}
+        .grid-e{ grid-area: center; background-color: brown; }
+
+        #grid {
+            height: 200px;
+            display: grid;
+            grid-template-areas: 
+                'a a y y y y'
+                'a a center center center w'
+                'a a center center center w'
+                'a a z z z z'
+                'a a z z z z';
+                padding-bottom: 20px;
+        }
+
+        .grid-f{
+            background-color: blueviolet;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            /* grid-row-start: 1;
+            grid-row-end: 4; */
+        }
+        .grid-g{background-color: rgb(43, 226, 95);}
+        .grid-h{background-color: rgb(169, 72, 141);}
+        .grid-i{background-color: rgb(213, 67, 14);}
+
+        .grid2{
+            display: grid;
+            grid-auto-flow: row;
+            /* grid-template-rows: 30px 30px 30px 30px;
+            grid-template-columns: 50px 50px 50px 50px; */
+            /* grid-row-gap: 25px; 
+            grid-column-gap: 25px; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS GRID</h1>
+
+    <div id="grid">
+        <div class="grid-a">lorem</div>
+        <div class="grid-b">Header</div>
+        <div class="grid-c">Footer</div>
+        <div class="grid-d">Right</div>
+        <div class="grid-e">Main</div>
+    </div>
+
+    <div class="grid2">
+        <div class="grid-f">fooo</div>
+        <div class="grid-g">goooo</div>
+        <div class="grid-h">hooo</div>
+        <div class="grid-i">iooo</div>
+    </div>
+</body>
+</html>

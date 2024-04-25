@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+  </head>
+  <body>
+    <h1>Gradient Canvas</h1>
+    <p> The x-coordinate of the start point of the gradient </p>
+    <canvas id="myCanvas_1" width="300" height="150"style="border:1px solid #d3d3d3;">
+        Your browser doesn't support the canvas element.
+    </canvas>
+    
+    <p>The y-coordinate of the start point of the gradient </p>
+    <canvas id="myCanvas_2" width="300" height="150"style="border:1px solid #d3d3d3;"> 
+        Your browser doesn't support the canvas element. 
+    </canvas>
+    
+    <p> The x-coordinate of the end point of the gradient </p>
+    <canvas id="myCanvas_3" width="300" height="150"style="border:1px solid #d3d3d3;">
+        Your browser doesn't support the canvas element. 
+    </canvas>
+    
+    <p> The y-coordinate of the end point of the gradient </p>
+    
+    <canvas id="myCanvas_4" width="300" height="150"style="border:1px solid #d3d3d3;">
+        Your browser doesn't support the canvas element. 
+    </canvas>
+    <script>
+      var canvas = document.getElementById("myCanvas_1");
+      var context = canvas.getContext("2d");
+    
+      var my_gradient = context.createLinearGradient(170, 0, 0, 0);
+
+      my_gradient.addColorStop(0, "black");
+      my_gradient.addColorStop(1, "red");
+
+      context.fillStyle = my_gradient;
+      context.fillRect(20, 20, 150, 100);
+
+    </script>
+  </body>
+</html>

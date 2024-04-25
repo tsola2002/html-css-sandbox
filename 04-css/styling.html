@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styles</title>
+    <style>
+
+        #yellow {
+            color: yellow;
+        }
+
+        #yellow:hover {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .section .subsection {
+            color: pink;
+        }
+
+        /* img[alt="sholly2"]{
+            border: 1px solid red;
+        } */
+
+        img[alt^="sholly"]{
+            border: 1px solid red;
+        }
+
+        /* img[alt^="bally"]{
+            border: 1px solid orange;
+        } */
+
+        img[alt*="hol"]{
+            border: 1px solid green;
+        }
+
+        img:last-of-type{
+
+            border: 2px solid cyan;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Selectors</h1>
+
+
+    <div class="section">
+
+        <h1>heading 1</h1>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
+        <h4>heading 4</h4>
+        <h5>heading 5</h5>
+        <h6>heading 6</h6>
+
+        <img class="floating-img" src="../03-images/sholly-image.jpeg"
+        title="sholas title" 
+        alt="sholly1"
+        width="100"
+        height="100"
+        style="padding: 2px;">
+
+        <img class="floating-img" src="../03-images/sholly-image.jpeg"
+        title="sholas title" 
+        alt="sholly2"
+        width="100"
+        height="100"
+        style="padding: 2px;">
+
+        <img class="floating-img" src="../03-images/sholly-image.jpeg"
+        title="sholly3" 
+        alt="shoally3"
+        width="100"
+        height="100"
+        style="padding: 2px;">
+
+        <img class="floating-img2" src="../03-images/sholly-image.jpeg"
+        title="shoblly3" 
+        alt="bally1"
+        width="100"
+        height="100"
+        style="padding: 2px;">
+
+        <img class="floating-img3" src="../03-images/sholly-image.jpeg"
+        title="sholly3" 
+        alt="bally2"
+        width="100"
+        height="100"
+        style="padding: 2px;">
+
+        <img class="floating-img" src="../03-images/sholly-image.jpeg"
+        title="sholly3" 
+        alt="bally3"
+        width="100"
+        height="100"
+        style="padding: 2px;">
+
+        <div class="subsection">
+            this is my subsection
+            <div class="grandchild">this is my grandchild</div>
+        </div>
+
+    </div>
+    <p style="color: blueviolet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Maxime excepturi nam, exercitationem magnam harum error nesciunt praesentium nobis,
+    veritatis nulla provident, blanditiis assumenda perferendis sint ex? Modi ex rem tempore.</p>
+
+    <p id="yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Maxime excepturi nam, exercitationem magnam harum error nesciunt praesentium nobis,
+    veritatis nulla provident, blanditiis assumenda perferendis sint ex? Modi ex rem tempore.</p>
+
+    <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Maxime excepturi nam, exercitationem magnam harum error nesciunt praesentium nobis,
+    veritatis nulla provident, blanditiis assumenda perferendis sint ex? Modi ex rem tempore.</p>
+    
+
+    <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Maxime excepturi nam, exercitationem magnam harum error nesciunt praesentium nobis,
+    veritatis nulla provident, blanditiis assumenda perferendis sint ex? Modi ex rem tempore.</p>
+  
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+  </head>
+  <body>
+    <h1>Shadow blur and Shadow color</h1>
+    <canvas id="myCanvas" width="500" height="500" style="border: 1px solid">
+    </canvas>
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+
+      
+      context.shadowColor = "red";
+      context.shadowBlur = 80;
+      context.shadowOffsetX = 50;
+      context.shadowOffsetY = 50;
+      context.fillStyle = "lightgreen";
+      context.fillRect(20, 20, 100, 80);
+       
+      
+
+      context.shadowColor = "darkblue"; 
+      context.fillRect(140, 20, 100, 80);
+
+    </script>
+  </body>
+</html>
